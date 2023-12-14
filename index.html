@@ -20,17 +20,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./assets/images/page/favicon.png" />
 
   <!-- Put your site title here -->
   <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
+    Braxton Wright | A CS Developer
   </title>
 
-  <meta name="description" content="Add small description of yourslef.">
+  <meta name="description" content="A small profile for Braxton Wright hosted on GitHub.">
   <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <meta name="keywords" content="C, C++, C#, java, javascript, typescript, bash, python, powershell, react, angular, bootstrap, css, html, nodejs, express, mongo db, oracle, sqlite, django, dot net, blender, unity, git" />
   <link rel="stylesheet" href="index.css" />
+  <!-- Added the following so that we can use SEO (Search Engine Optimization) as talked about here https://www.greengeeks.com/blog/html-tags-for-seo/ in point #9 -->
+  <link rel="canonical" href="https://braxtonwright.github.io/" />
+  <link rel="canonical" href="/resume" />
 </head>
 
 <body>
@@ -42,13 +45,10 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <!--<li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>-->
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -56,10 +56,10 @@
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
+          <span>Braxton Wright</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
+        <p>A Computer Science Developer.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
@@ -71,112 +71,172 @@
 
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>Work I've done</h2>
         <div class="work__boxes">
 
           <!-- Each div with the work__box class is a project. -->
-
+          <!-- Time Tracker project for Weber State (from CS 4760) -->
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>Time Tracker</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                An angular app developed for Weber State that allows users to track and view times on group projects in courses they are registered for.
               </p>
               <ul class="work__list">
+                <li>SEAN stack (SQLite3, Express, Angular, Node)</li>
                 <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>TypeScript/JavaScript</li>
+                <li>CSS</li>
               </ul>
 
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/BraxtonWright/TimeTrackerFall23" target="_blank" class="link__text">
+                  View project on GitHub<span>&rarr;</span>
                 </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                <a href="https://github.com/BraxtonWright/TimeTrackerFall23" title="View Source Code" target="_blank">
+                  <img src="./assets/images/page/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <video controls>
+                <source src="./assets/videos/Time Tracker.mp4" />
+                There is an issue displaying the video for this project.
+              </video>
             </div>
           </div>
-
+          
+          <!-- Blender Script Rendering Builder (developed in CS 3650) -->
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Blender Script Rendering Builder</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                A dot net application in C# that allows users to generate .bat files to automate rendering jobs inside the 3D creation suite Blender.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Dotnet 7</li>
+                <li>C#</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/BraxtonWright/Blender-Script-Rendering-Builder" target="_blank" class="link__text">
+                  View project on GitHub<span>&rarr;</span>
                 </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="https://github.com/BraxtonWright/Blender-Script-Rendering-Builder" title="View Source Code" target="_blank">
+                  <img src="./assets/images/page/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <video controls>
+                <source src="./assets/videos/Blender Script Rendering Builder.mp4" />
+                There is an issue displaying the video for this project.
+              </video>
             </div>
           </div>
 
+          <!-- Powershell auto backup Utility (personal project) -->
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>Powershell Auto Backup Utility</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                A powershell script that will take any number of "Jobs" that a user pre-defines and it will either backup or restore the files from two or more folders.  This script achieves this by using the <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy">robocopy</a> command to backup/restore said files.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Powershell</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/BraxtonWright/Auto-Backup-Utility" target="_blank" class="link__text">
+                  View project on GitHub<span>&rarr;</span>
                 </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="https://github.com/BraxtonWright/Auto-Backup-Utility" title="View Source Code" target="_blank">
+                  <img src="./assets/images/page/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
+                <video controls>
+                    <source src="./assets/videos/Auto Backup Utility.mp4" />
+                    There is an issue displaying the video for this project.
+                  </video>
+                </div>
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- ***** Clients ***** -->
 
-    <section class="client" id="clients">
+    <!--<section class="client" id="clients">
       <div class="row">
         <h2>Clients</h2>
-        <div class="client__logos">
+        <div class="client__logos">-->
           <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+          <!--<img src="" class="client__logo" alt="Company 2" />
         </div>
       </div>
+    </section>-->
+
+    <!-- ***** Skills ***** -->
+
+    <section class="skill" id="skills">
+        <div class="row">
+            <h2>Skills</h2>
+            <!-- The below code was retrieved from this readme generator used for github with small changes, bash (being moved from Devops to Programming) and powershell (added because the option didn't exist) https://rahuldkjain.github.io/gh-profile-readme-generator/ -->
+            <div class="skill__grid">
+                <div>
+                    <h4>Programming Languages</h4>
+                    <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c"/></a>
+                    <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus"/></a>
+                    <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp"/></a>
+                    <a href="https://www.java.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java"/></a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"/></a>
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript"/></a>
+                    <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"><img class="contrastImage" src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash"/></a>
+                    <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python"/></a>
+                    <a href="https://learn.microsoft.com/en-us/powershell/" target="_blank" rel="noreferrer"><img src="https://gist.githubusercontent.com/Xainey/d5bde7d01dcbac51ac951810e94313aa/raw/6c858c46726541b48ddaaebab29c41c07a196394/PowerShell.svg" alt="powershell"/></a>
+                </div>
+                <div>
+                    <h4>Frontend Development</h4>
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react"/></a>
+                    <a href="https://angular.io" target="_blank" rel="noreferrer"><img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular"/></a>
+                    <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap"/></a>
+                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"><img class="contrastImage" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"/></a>
+                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"><img class="contrastImage" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/></a>
+                </div>
+                <div>
+                    <h4>Backend Development</h4>
+                    <a href="https://nodejs.org" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs"/></a>
+                    <a href="https://expressjs.com" target="_blank" rel="noreferrer"><img class="contrastImage" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express"/></a>  <!--  -->
+                </div>
+                <div>
+                    <h4>Databases</h4>
+                    <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb"/></a>
+                    <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle"/></a>
+                    <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite"/></a>
+                </div>
+                <div>
+                    <h4>Frameworks</h4>
+                    <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"><img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django"/></a>
+                    <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"><img class="contrastImage" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet"/></a>
+                </div>
+                <div>
+                    <h4>Software</h4>
+                    <a href="https://www.blender.org/" target="_blank" rel="noreferrer"><img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender"/></a>
+                </div>
+                <div>
+                    <h4>Game Engines</h4>
+                    <a href="https://unity.com/" target="_blank" rel="noreferrer"><img class="contrastImage" src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity"/></a>
+                </div>
+                <div>
+                    <h4>Other</h4>
+                    <a href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"></a>
+                </div>
+    
+            </div>
+        </div>
     </section>
 
     <!-- ***** About ***** -->
@@ -188,18 +248,20 @@
           <div class="about__text">
             <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              My Name is Braxton Wright and I am 24.  I graduated from
+              Weber State University with my Batchers in CS at the end of 2023 with
+              a GPA of 3.79.  For my free time, I like to create things either on my
+              computer or physically.  For example, a hobby of mine is that I make
+              rings.  To date I have made 28 rings for family members and friends.
             </p>
+
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <!-- <a href="#" class="btn">My Resume</a> -->
           </div>
 
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="./assets/images/page/syed-ali-hussnain.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -213,15 +275,11 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          If you wish to contact me, send me an email with the subject field stating
+          who the email is from and a short description for why you are contacting me.  
         </p>
         <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <a href="mailto:temp@example.com" class="btn" target="_blank">temp@example.com</a>
       </div>
     </div>
   </section>
@@ -232,26 +290,26 @@
     <div class="row">
       <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
-        <li class="footer__social-link-item">
+        <!--<li class="footer__social-link-item">
           <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+            <img src="./assets/images/page/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>-->
+        <li class="footer__social-link-item">
+          <a href="https://github.com/BraxtonWright/" title="Link to Github Profile" target="_blank">
+            <img src="./assets/images/page/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
+        <!--<li class="footer__social-link-item">
           <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+            <img src="./assets/images/page/codepen.svg" class="footer__social-image" alt="Codepen">
           </a>
         </li>
         <li class="footer__social-link-item">
           <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+            <img src="./assets/images/page/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
-        </li>
+        </li>-->
       </ul>
 
       <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
@@ -268,7 +326,7 @@
   </footer>
 
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./assets/images/page/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
 </body>
